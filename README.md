@@ -51,6 +51,19 @@
 	Few Last Things:
 	
 	You will notice the first time you go to use the command that it will ask if you want to add 		github to a list of known hosts. You will want to type yes to these requests because it will 		remember that GitHub is safe and then not harass you about pushing to it anymore. After the 		first time you select that option, you shouldn’t have to do it again.
+	
+	Testing your SSH connection
+
+		ssh -T git@github.com
+
+	You may see a warning like this:
+		> The authenticity of host 'github.com (IP ADDRESS)' can't be established.
+		> RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+		> Are you sure you want to continue connecting (yes/no)?
+	Verify that the fingerprint in the message you see matches one of the messages in step 2, 		then type yes:
+
+		> Hi username! You've successfully authenticated, but GitHub does not
+		> provide shell access.
 
 
 	
